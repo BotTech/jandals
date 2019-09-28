@@ -8,7 +8,7 @@ This requires some manual steps as we want to reduce the exposure of the master 
 
 You will need:
 - 3 x USB flash drives (1 must be at least 8GB)
-- A laptop that supports [Tails] (see [Tails - Known issues])
+- A laptop that supports [Tails] (see [Tails known issues])
 
 ### Notes
 
@@ -45,10 +45,10 @@ You will need to temporarily [enable booting from external media][Apple External
 # 2 - Enable Tails Persistent Volume
 
 We are going to store the master private key on the same USB that has Tails. To do this we need to:
-# Boot into Tails.
-# Enable [Tails persistent volume].
-# Make sure to select GnuPG.
-# Restart Tails.
+1. Boot into Tails.
+1. Enable [Tails persistent volume].
+1. Make sure to select GnuPG.
+1. Restart Tails.
 
 # 3 - Generate OpenPGP Key
 
@@ -77,15 +77,15 @@ ssb   ed25519/0X7D3DD2E3A364DA82 2019-09-28 [A] [expires: 2020-09-27]
 # 4 - Export
 
 If you haven't already then keep following the [Airgapped Master Key instructions] and export:
-* Revocation Certificate
-* Public Keys
-* Secret Subkeys (only the subkeys!)
+- Revocation Certificate
+- Public Keys
+- Secret Subkeys (only the subkeys!)
 
 # 5 - Import
 
 Again keep following the [Airgapped Master Key instructions] and import:
-* Public Keys
-* Secret Subkeys
+- Public Keys
+- Secret Subkeys
 
 Don't forget to `trust` your new key.
 
@@ -97,19 +97,19 @@ You may even disregard everything above and generate the key on your YubiKey.
 I wouldn't do this since I take my YubiKey with me and am far more likely to loose it so I don't want my master key on here.
 
 
-[Airgapped Master Key instructions]: https://wiki.debian.org/GnuPG/AirgappedMasterKey
-[Apple External Boot]: https://support.apple.com/en-nz/HT208198
-[Debian unstable kernel version]: https://salsa.debian.org/kernel-team/linux/blob/sid/debian/changelog
-[Dunedan/mbp-2016-linux]: https://github.com/Dunedan/mbp-2016-linux#keyboard--touchpad
-[Ed25519]: https://en.wikipedia.org/wiki/EdDSA#Ed25519
-[fuck RSA]: https://blog.trailofbits.com/2019/07/08/fuck-rsa/
-[OpenPGP Key Management]: https://www.gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html
-[RSA}: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
-[Tails]: https://tails.boum.org
-[Tails current version]: https://git-tails.immerda.ch/tails/plain/config/amnesia
-[Tails kernel]: https://tails.boum.org/contribute/Linux_kernel/
-[Tails known issues]: https://tails.boum.org/support/known_issues/index.en.html
-[Tails installation]: https://tails.boum.org/install/index.en.html
-[Tails persistent volume]: https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html#gnupg
-[YubiKey 5.2.3]: https://support.yubico.com/support/solutions/articles/15000027139-yubikey-5-2-3-enhancements-to-openpgp-3-4-support
-[YubiKey OpenPGP]: https://support.yubico.com/support/solutions/articles/15000006420-using-your-yubikey-with-openpgp#Generating_the_Key_on_Your_Local_System_(Recommended)arh698
+[airgapped master key instructions]: https://wiki.debian.org/GnuPG/AirgappedMasterKey
+[apple external boot]: https://support.apple.com/en-nz/HT208198
+[debian unstable kernel version]: https://salsa.debian.org/kernel-team/linux/blob/sid/debian/changelog
+[dunedan/mbp-2016-linux]: https://github.com/Dunedan/mbp-2016-linux#keyboard--touchpad
+[ed25519]: https://en.wikipedia.org/wiki/EdDSA#Ed25519
+[fuck rsa]: https://blog.trailofbits.com/2019/07/08/fuck-rsa/
+[openpgp key management]: https://www.gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html
+[rsa]: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+[tails]: https://tails.boum.org
+[tails current version]: https://git-tails.immerda.ch/tails/plain/config/amnesia
+[tails kernel]: https://tails.boum.org/contribute/Linux_kernel/
+[tails known issues]: https://tails.boum.org/support/known_issues/index.en.html
+[tails installation]: https://tails.boum.org/install/index.en.html
+[tails persistent volume]: https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html#gnupg
+[yubikey 5.2.3]: https://support.yubico.com/support/solutions/articles/15000027139-yubikey-5-2-3-enhancements-to-openpgp-3-4-support
+[yubikey openpgp]: https://support.yubico.com/support/solutions/articles/15000006420-using-your-yubikey-with-openpgp#Generating_the_Key_on_Your_Local_System_(Recommended)arh698
