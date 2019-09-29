@@ -14,7 +14,7 @@ Jandals will do the following things:
 1. Install and configure the Package Manager.
 1. Install the runtime environment (Python 3).
 1. Download and install the rest of itself.
-- This will be custom until the point where Jandals itself is able to be managed by the Package Manager.
+   - This will be custom until the point where Jandals itself is able to be managed by the Package Manager.
 1. Setup the rest of the environment.
 
 ## Supported Shells
