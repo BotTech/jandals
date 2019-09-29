@@ -21,7 +21,7 @@ Jandals will do the following things:
 
 | OS | Shell | Package Manager |
 |----|-------|-----------------|
-| macOS (10.14.x - Mojave) | [Bash](#bash) | [Homebrew] |
+| macOS (10.14.x - Mojave) | [Bash](#bash) | Homebrew |
 
 ### Bash
 
@@ -31,6 +31,5 @@ bash <(curl -s https://raw.githubusercontent.com/BotTech/jandals/master/bin/jand
 ```
 
 
-[homebrew]: https://brew.sh/
 [kiwi]: https://en.wikipedia.org/wiki/Kiwi_(people)
 [what the heck is a jandal]: https://en.wikipedia.org/wiki/Flip-flops#Etymology
