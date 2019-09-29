@@ -20,7 +20,7 @@ Jandals will do the following things:
 ## Supported Shells
 
 | OS | Shell | Package Manager |
---------------------------------
+|----|-------|-----------------|
 | macOS (10.14.x - Mojave) | [Bash](#bash) | [Homebrew] |
 
 ### Bash
