@@ -4,19 +4,24 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="jandals",
-    version="0.0.1",
     author="Jason Pickens",
     author_email="jasonpickensnz@gmail.com",
-    description="Bootstraps a new development environment with no prerequisites",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/BotTech/jandals",
-    packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Topic :: Software Development",
     ],
-    python_requires='>=3.7',
+    description="Bootstraps a new development environment with no prerequisites",
+    entry_points={"console_scripts": ["jandals = jandals.jandals:main"]},
+    keywords="bootstrap development-environment developer-tools setup-development-environment setup-tool setuptools setup-macos",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    name="jandals",
+    packages=setuptools.find_packages(),
+    python_requires=">=3",
+    url="https://github.com/BotTech/jandals",
+    version="0.0.1",
 )
