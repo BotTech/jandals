@@ -7,4 +7,4 @@ def main():
         description="Bootstraps a new development environment with no prerequisites.",
     )
     parser.parse_args()
-    print("Can you handle the jandle?")
+    print("Can you handle the jandal?")
