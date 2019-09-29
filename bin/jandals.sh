@@ -63,4 +63,6 @@ echo "Python installed."
 
 echo "Installing Jandals..."
 pip install -e "${JANDALS_URL}"
-echo "Jandals installed."
+
+echo "Starting Jandals..."
+jandals "$@"
